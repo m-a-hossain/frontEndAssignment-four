@@ -98,6 +98,7 @@ nav ul li a:hover, a.active{
     justify-content: space-between;
     align-items: center;
 }
+
 .inp-width{
     min-width: 100px;
 }
@@ -108,6 +109,9 @@ nav ul li a:hover, a.active{
     margin: 10px 10px 0px 0px;
     word-spacing: 20px;
 }
+
+#econo-icon{color:red}
+#first-icon{color:green}
 .btn-style{
     display: block;
     width: 100%;
