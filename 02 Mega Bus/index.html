@@ -62,23 +62,23 @@
             </div>
             <div class="inputs">
                 <div class="input-group f-class">
-                    <button id="first-icon"><i id="first-class-icon-plus" class="fa fa-plus"></i></button>
+                    <button onclick="busTicketPriceHandling('first',true)" id="first-icon"><i  class="fa fa-plus"></i></button>
                 <div>
                     <label for="">First Class ($ <span id="first-class-price">150</span> )</label>
                     <input class="inp-style inp-width" type="number" id="first-class-value" value="0">
                 </div>
-                <button id="first-icon"><i id="first-class-icon-minus" class="fa fa-minus"></i></button>
+                <button onclick="busTicketPriceHandling('first',false)" id="first-icon"><i  class="fa fa-minus"></i></button>
                <!--  <div class="plus-minus-btn">
                     <p>+ -</p>
                 </div> -->
             </div>
                 <div class="input-group f-class">
-                    <button id="econo-icon"><i id="economy-class-icon-plus" class="fa fa-plus"></i></button>
+                    <button onclick="busTicketPriceHandling('economy',true)" id="econo-icon"><i  class="fa fa-plus"></i></button>
                     <div>
                         <label for="">Economy ($<span id="economy-class-price">100</span> )</label>
                         <input id="economy-class-value" class="inp-style inp-width" type="number" value="0">
                     </div>
-                    <button id="econo-icon"><i id="economy-class-icon-minus"  class="fa fa-minus"></i></button>
+                    <button onclick="busTicketPriceHandling('economy',false)" id="econo-icon"><i  class="fa fa-minus"></i></button>
                    <!--  <div class="plus-minus-btn">
                         <p> <span>+</span> <span>-</span> </p>
                     </div> -->
@@ -91,7 +91,7 @@
                         <p>Subtotal</p>
                     </div>
                     <div class="right">
-                        <p>$<span id="subtotal">500</span> </p>
+                        <p>$<span id="subtotal">00</span> </p>
                     </div>
                 </div>
 
@@ -100,7 +100,7 @@
                         <p>Charge 10% VAT</p>
                     </div>
                     <div class="right">
-                        <p>$50</p>
+                        <p>$<span id="vat">00</span></p>
                     </div>
                 </div>
                 <hr>
@@ -109,7 +109,7 @@
                         <h4>Total</h4>
                     </div>
                     <div class="right">
-                        <p>$550</p>
+                        <p>$ <span id="total">00</span> </p>
                     </div>
                 </div>
             </div>
