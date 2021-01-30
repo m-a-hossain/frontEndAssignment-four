@@ -40,6 +40,7 @@
            document.getElementById('noOfTicket').innerText =noOfTotalTicket
            document.getElementById('noOfFirstClass').innerText =firstClassVal
            document.getElementById('noOfEconoClass').innerText =economyClassVal
+           document.getElementById('subTotal').innerText =total
            document.getElementById('totalTicketPrice').innerText=grandTotal 
            document.getElementById('vatTicketPrice').innerText= vat 
           
