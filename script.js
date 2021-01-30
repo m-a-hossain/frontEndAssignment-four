@@ -33,7 +33,9 @@
             const grandTotal =total + vat 
             document.getElementById('total').innerText = grandTotal
 
-        
+           if(grandTotal == 0){
+               alert('you select nothing')
+           }
           // showing input and const value in ticket details modal
             let noOfTotalTicket=firstClassVal+economyClassVal
             //console.log(totalT)
@@ -41,8 +43,8 @@
            document.getElementById('noOfFirstClass').innerText =firstClassVal
            document.getElementById('noOfEconoClass').innerText =economyClassVal
            document.getElementById('totalTicketPrice').innerText=grandTotal 
-           document.getElementById('vatTicketPrice').innerText= vat
-        
+           document.getElementById('vatTicketPrice').innerText= vat 
+          
         }
         
         // function for getting input form input value
@@ -51,7 +53,8 @@
             let ticketClassVal=parseInt(ticketClassInput.value)
             return ticketClassVal
         }
-        
+
+     
 
 
 

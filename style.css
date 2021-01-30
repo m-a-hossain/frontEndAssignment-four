@@ -127,31 +127,6 @@ nav ul li a:hover, a.active{
     justify-content: space-between;
 }
 
-/* #show-checkout{
-    display: none;
-    position: relative;
-    width:400px;height:auto;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-    margin-left: 200px;
-    z-index: 1;
-}
-#show-checkout button{
-    width: 100%;
-    padding: 5px;
-    background-color:  #52AF3A;
-    margin-top: 5px;
-}
-#cancel-btn{
-    background-color:  #b61c43;
-}
-#table tr, td{
- border:.5px solid red;
- padding:5px;
-}
- */
 #display{display: none;}
 #cancel-btn{
     display: block;
