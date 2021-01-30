@@ -16,7 +16,7 @@
             if(ticket == 'economy'){
                 ticketTotal =  newTicketClassVal * 100
             }
-            //document.getElementById(ticket+'-class-price').innerText =  ticketTotal
+           
             calculateTotal()
         }
 
@@ -33,9 +33,7 @@
             const grandTotal =total + vat 
             document.getElementById('total').innerText = grandTotal
 
-           if(grandTotal == 0){
-               alert('you select nothing')
-           }
+        
           // showing input and const value in ticket details modal
             let noOfTotalTicket=firstClassVal+economyClassVal
             //console.log(totalT)
