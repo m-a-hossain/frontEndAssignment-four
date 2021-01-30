@@ -115,37 +115,60 @@
             </div>
             <button onclick="ticketDetails()" class="btn-style">Book Now</button>
         </div>
+ <script>
+     function ticketDetails(){
+       var dis=  document.getElementById('display').style.display='block'
+       return dis
+     }
+    function dispalyClose(){
+        var dis=  document.getElementById('display').style.display='none'
+       return dis
+    }
 
+ </script>
   
     </main>
     
     <script src="script.js"></script>
     <!--Thank You-->
 </body>
-<!-- <div class="login-modal">
+ <div class="login-modal" id="display">
     <div class="log-modal-content">
       <h3>Your Ticket Detail</h3>
-      
+      <hr>
       <table id="table">
-          <tr>
-          <th>No Of Ticket</th>
-          <th>Class</th>
-           <th>Total-Const</th>
-          <th>Date</th>
-        </tr> 
-        <br>
-        <tr>
-          <td>1 </td> 
-          <td>economy</td>
-          <td>$555</td>
-          <td>01-855-222</td>
-        
-        </tr> 
+             <tr>
+             <th>No Of Tickets</th> <br>
+               <td id="noOfTicket">00 </td> 
+             </tr>
+            <tr>
+            <th>First Class (price $150)</th> 
+               <td id="noOfFirstClass">00</td>
+            </tr>
+            <tr>
+            <th>Economy Class (price $100)</th>   
+               <td id="noOfEconoClass">00</td>
+            </tr>
+            <th>Vat</th>
+            <td>$<span id="vatTicketPrice">00</span> </td>
+         </tr>
+            <tr>
+            <th>Total Price</th>
+               <td>$<span id="totalTicketPrice">00</span> </td>
+            </tr>
+
+    
       </table>
       <br>
       <p>Go for checkout</p>
-      <button>Check-out</button>
-      <button id="cancel-btn">Cancel</button>
+      <button id="checkOut">Check-out</button><br>
+      <button onclick="dispalyClose()" id="cancel-btn">Cancel</button>
     </div>
-</div> -->
+ <!--   <script>
+       var firstClassTicket= document.getElementById('first-class-value').value 
+       console.log(firstClassTicket)
+       var economyClassTicket=document.getElementById('economy-class-value').value 
+       console.log(economyClassTicket)
+   </script> -->
+</div> 
 </html>
