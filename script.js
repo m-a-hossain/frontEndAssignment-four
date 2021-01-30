@@ -53,6 +53,18 @@
             return ticketClassVal
         }
 
+        // onclick function for booking button and showing modal page
+        function ticketDetails(){
+            var dis=  document.getElementById('display').style.display='block'
+            return dis
+          }
+        // onclick function for modal inside cancel button
+         function dispalyClose(){
+             var dis=  document.getElementById('display').style.display='none'
+            return dis
+         }
+     
+
      
 
 
